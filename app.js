@@ -35,7 +35,6 @@ app.get('/forums/threads/:id', function(req, res){
 app.get('/forums/threads/:id/new', function(req, res){
 	var id = req.params.id;
 	db.all("SELECT topics, id FROM subforums", function(err, rows){
-	console.log(rows);
 	var subforumTable = rows;
 		db.all("SELECT * FROM threads WHERE id=?", id, function(err, rows){
 			res.render('createthreads.ejs', {id: id, children: subforumTable});
@@ -157,7 +156,6 @@ app.put('/forums/threads/:id/showvote', function(req, res){
 	// Updating the likes of the thread
 	db.run("UPDATE threads SET likes=? WHERE id=?", downvote, id, function(error, rows){
     	if(currentVote === "-10"){
-	console.log(currentVote);
     		db.run("DELETE FROM threads WHERE id=?", id, function(err, rows){
     		res.redirect('/');	
     		});
