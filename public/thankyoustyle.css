@@ -1,0 +1,67 @@
+html{
+	background-image: url(http://i.imgur.com/1Momt9K.jpg);
+	background-size: cover;
+	background-color: black;
+	background-position: right;
+}
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.wrapper{
+	background-image: url(http://i.imgur.com/TT16s.jpg);
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	box-shadow: 5px 5px 5px  black;
+}
+
+.bannerimg{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.container{
+	width: 90%;
+	border: 2px solid #000;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 30px;
+}
+
+.banner-sep{
+	height: 2px;
+	background-color: black;
+	opacity: .2;
+}
+
+.thankyouimg{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.copyright{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+.about-contact{
+	text-align: center;
+}
+
+a:link {
+    color: #E4E4E4;
+}
+a:visited {
+    color: #E4E4E4;
+}
+a:hover {
+    color: #89282A;
+}

@@ -1,0 +1,86 @@
+html{
+	background-image: url(http://i.imgur.com/1Momt9K.jpg);
+	background-size: cover;
+	background-color: black;
+	background-position: right;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.bannerimg{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.newthread{
+	font-size: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.banner-sep{
+	height: 2px;
+	background-color: black;
+	opacity: .2;
+}
+
+.wrapper{
+	background-image: url(http://i.imgur.com/TT16s.jpg);
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	box-shadow: 5px 5px 5px  black;
+}
+
+.form-container{
+	font-size: 20px;
+	border: 1px solid #000;
+	width: 70%;
+	margin: 0.3em 0 0.2em 0;
+	font-family: 'Varela Round', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.textbox{
+	margin: auto;
+}
+
+.container{
+	width: 90%;
+	border: 2px solid #000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.copyright{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+.about-contact{
+	text-align: center;
+}
+
+.header-box{
+	font-family: 'Varela Round', sans-serif;
+}
+
+a:link {
+    color: #E4E4E4;
+}
+
+a:visited {
+    color: #E4E4E4;
+}
+
+a:hover {
+    color: #89282A;
+}

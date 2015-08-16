@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game Inforum - Thread Discussions</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="/mainthreadstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="pure-g wrapper">
+
+		<!-- header with subforum dropdown menu -->
+		<div class="pure-u-1 banner">
+			<a href="/"><img class="pure-img bannerimg" src="/gameforumbanner.png"></a>
+		</div>
+		<div class="pure-u-1 banner-sep"> </div>
+		<div class="pure-u-1-5 pure-menu pure-menu-horizontal">
+		    <ul class="pure-menu-list">
+		        <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
+		        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+		            <a href="#" id="menuLink1" class="pure-menu-link">Forum Boards</a>
+		            <ul class="pure-menu-children">
+		            	<% children.forEach(function(elem){ %>
+		                <li class="pure-menu-item"><a href="/forums/threads/<%=elem.id%>" class="pure-menu-link"><%=elem.topics%></a></li>
+		            	<%})%>
+		            </ul>
+		        </li>
+		    </ul>
+		</div>
+		<div class="pure-u-1 banner-sep"> </div>
+
+		<!-- Iterating threads and create new threads -->
+		<div class="pure-g container">
+			<div class="pure-u-1">
+				<div class="pure-u-16-24 discussion">
+					<strong>Popular Game Discussions</strong>
+				</div>
+				<div class="pure-u-7-24 create-thread">
+					<a href="/forums/threads/<%=id%>/new"><i class="fa fa-plus-circle">New Thread</i></a>
+				</div>
+			</div>
+
+			<% topics.forEach(function(elem){ %>
+			<div class="pure-u-1 pure-u-md-1-3">
+				<div class="threads">
+					<div class="innerthreads">
+						<i class="fa fa-folder-o"></i> &nbsp <a href="/forums/threads/<%=elem.thread_id%>/show"><strong><%= elem.title %></strong></a> 
+					</div>
+					<div class="likes-comments">
+						<i class="fa fa-thumbs-o-up"></i> <%=elem.likes%> || <i class="fa fa-comment-o"></i> <%=elem.counter%>
+					</div>
+				</div>
+			</div>
+			<% }) %> 
+		</div>
+
+
+		<!-- copyright -->
+		<footer class="pure-u-1">
+		    <p class="copyright">&copy; 2015 Matt Yeung</p>
+	      	<nav class="pure-menu pure-menu-horizontal pure-u-1 about-contact">
+	      		<a href="/contact/new">Contact</a>
+	      	</nav>
+		</footer>
+	</div>
+</body>
+</html>

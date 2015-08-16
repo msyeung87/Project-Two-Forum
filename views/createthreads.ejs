@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game Inforum - Create New Threads</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="/createthreadstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="pure-g wrapper">
+
+		<!-- Header with subforum dropdown menu -->
+		<header class="pure-u-1-1 header">
+				<div class="banner">
+					<a href="/"><img class="pure-img bannerimg" src="/gameforumbanner.png"></a>
+				</div>
+				<div class="pure-u-1 banner-sep"> </div>
+			<div class="pure-u-1-5 pure-menu pure-menu-horizontal">
+			    <ul class="pure-menu-list">
+			        <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
+			        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+			            <a href="#" id="menuLink1" class="pure-menu-link">Forum Boards</a>
+			            <ul class="pure-menu-children">
+			            	<% children.forEach(function(elem){ %>
+			                <li class="pure-menu-item"><a href="/forums/threads/<%=elem.id%>" class="pure-menu-link"><%=elem.topics%></a></li>
+			            	<%})%>
+			            </ul>
+			        </li>
+			    </ul>
+			</div>
+				<div class="pure-u-1 banner-sep"> </div>
+		</header>
+
+		<!-- Form to create a new thread -->
+		<div class="pure-g container">
+			<div class="pure-u-1">
+				<div class="pure-u-16-24 newthread">
+					<strong>Create a new thread.</strong>
+				</div>
+			</div>
+
+			<div class="pure-g form-container">
+				<div class="pure-u-1">
+					<form class="pure-form textbox" method="POST" action="/forums/threads/<%=id%>">
+						<fieldset class="pure-group">
+			        		<input type="text" name="threadTitle" class="pure-input-1-2" placeholder="Enter Title" required>
+
+			        		<input type="text" name="userName" class="pure-input-1-2" placeholder="Enter Name" required>
+
+			        		<textarea name="postComments" class="pure-input-1-2" placeholder="Enter Comments" ROWS=7 COLS=100 required></textarea>
+			    		</fieldset>
+			    		<button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Create Post</button>
+					</form>
+				</div>
+			</div>
+		</div>	
+
+
+		<!-- copyright -->
+		<footer class="pure-u-1">
+		    <p class="copyright">&copy; 2015 Matt Yeung</p>
+		    <nav class="pure-menu pure-menu-horizontal pure-u-1 about-contact">
+		    	<a href="/contact/new">Contact</a>
+		    </nav>
+		</footer>
+	</div>
+</body>
+</html>

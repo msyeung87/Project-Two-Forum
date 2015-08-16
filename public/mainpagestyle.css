@@ -1,0 +1,79 @@
+html{
+	background-image: url(http://i.imgur.com/1Momt9K.jpg);
+	background-size: cover;
+	background-color: black;
+	background-position: right;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.bannerimg{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.subforum-comment{
+	font-size: 14px;
+}
+
+.wrapper{
+	background-image: url(http://i.imgur.com/TT16s.jpg);
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	box-shadow: 5px 5px 5px  black;
+}
+
+.banner-sep{
+	height: 2px;
+	background-color: black;
+	opacity: .2;
+}
+
+.container{
+	width: 90%;
+	border: 2px solid #000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.subforum{
+	font-size: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.subforums{
+	font-size: 20px;
+	border: 1px solid #000;
+	width: 70%;
+	margin: 10px 0 10px 10px;
+	font-family: 'Varela Round', sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.copyright{
+	font-family: 'Varela Round', sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+.about-contact{
+	text-align: center;
+}
+
+a:link {
+    color: #E4E4E4;
+}
+a:visited {
+    color: #E4E4E4;
+}
+a:hover {
+    color: #89282A;
+}
